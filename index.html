@@ -33,15 +33,15 @@
 				</div>
 			</div>
 		</div>
-		<div id="cst-space">
+		<div class="cst-space">
 			<div class="sid-bts lt"></div>
 			<div class="sid-bts rt"></div>
-			<div id="btc-lst">
+			<div class="btc-lst">
 				<div class="itm selected" index="0"></div>
 				<div class="itm" index="1"></div>
 			</div>
-			<div id="gall-wp" class="ind-3e">
-				<div id="gall-list">
+			<div class="gall-wp ind-3e">
+				<div class="gall-list">
 					<div class="gall-itm" index="0">
 						<div class="dmi-t1">善治者，治互联网</div>
 						<div class="dmi-t2">只讲，纯效力——我们的「数字营销与电商使命观」</div>
@@ -81,7 +81,7 @@
 			
 		</div>
 		
-		<div class="container">
+		<div class="container" style="margin-bottom:20px;">
 			<div class="row lltt">
 				<div class="col-xs-12 tc">
 					<span class="ttx">善治者，专治互联网不适应症</span>
@@ -149,39 +149,93 @@
 				</div>
 			</div>
 		</div>
+		
+		<div class="ganglne" style="border-top:1px solid #DDD;">
+			<div class="tt1">
+				艾网 · 服务
+			</div>
+			<div class="tt2">
+				SERVICE
+			</div>
+			<div class="short-h-l"></div>
+		</div>
+		
+		<div class="cst-space">
+			<div class="sid-bts lt"></div>
+			<div class="sid-bts rt"></div>
+			<div class="btc-lst">
+				<div class="itm selected" index="0"></div>
+				<div class="itm" index="1"></div>
+			</div>
+			<div class="gall-wp ind-3e" style="background-image:url(img/bbg02.jpg)">
+				<div class="gall-list">
+					<div class="gall-itm" index="0">
+						<div class="dmi-t1">善治者，治互联网</div>
+						<div class="dmi-t2">只讲，纯效力——我们的「数字营销与电商使命观」</div>
+					</div>
+					<div class="gall-itm" index="1">
+						
+						<div class="dmi-t3">世界变了，那你呢？</div>
+						<div class="dmi-t6"></div>
+						<div class="dmi-t5">ARE YOU READY</div>
+						<div class="dmi-t4">
+							手机 微信 微博 微店 团购 淘宝 陌陌 二次元 ...<br/>
+							移动互联，打乱世界<br/>
+							前进，险境，钱途？
+						</div>
+						
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		
 		<script>
 			var singleWidth;
 			$('document').ready(function(){
 				singleWidth = $('.gall-itm').width();
-				var gi_c = 0;
-				$('.gall-itm').each(function(){
-					$(this).attr('index', gi_c);
-					gi_c++;
+				var bigcontent = $('.cst-space');
+				
+				$.each(bigcontent, function(){
+					var $this = $(this);
+					var gi_c = 0;
+					$this.find('.gall-itm').each(function(){
+						$(this).attr('index', gi_c);
+						gi_c++;
+					});
+					gi_c = 0;
+					$this.find('.btc-lst .itm').each(function(){
+						$(this).attr('index', gi_c);
+						gi_c++;
+					});
+					
+					var intid = setInterval(function(){
+						var nIndex = getNI($this.find('.sid-bts.rt'));
+						movfunc($this.find('.btc-lst .itm[index=' + nIndex + ']'));
+					}, 5000);
+					$this.data('auto-scroll-gall', intid);
 				});
-				gi_c = 0;
-				$('#btc-lst .itm').each(function(){
-					$(this).attr('index', gi_c);
-					gi_c++;
-				});
+				
 				
 				
 				var movfunc = function(obj){
 					var index = obj.attr('index');
 					var x = singleWidth * index * - 1;
-					$('#gall-list').animate({left: x}, 500);
-					$('#btc-lst .itm').removeClass('selected');
-					$('#cst-space .itm[index=' + index + ']').addClass('selected');
+					obj.closest('.cst-space').find('.gall-list').animate({left: x}, 500);
+					obj.closest('.cst-space').find('.btc-lst .itm').removeClass('selected');
+					obj.closest('.cst-space').find('.itm[index=' + index + ']').addClass('selected');
 				};
-				$('#cst-space .itm').click(function(){
+				$('.cst-space .itm').click(function(){
 					movfunc($(this));
 					
-					clearInterval($('body').data('auto-scroll-gall'));
+					clearInterval($(this).closest('.cst-space').data('auto-scroll-gall'));
 				});
 //				
 				var getNI = function(obj) {
-					var index = parseInt($('#btc-lst .itm.selected').attr('index'));
+					var index = parseInt(obj.closest('.cst-space').find('.btc-lst .itm.selected').attr('index'));
 					var nIndex = index - 1;
-					var mnd = $('#btc-lst .itm').length - 1;
+					var mnd = obj.closest('.cst-space').find('.btc-lst .itm').length - 1;
 					if(nIndex < 0) {
 						nIndex = mnd;
 					}
@@ -195,23 +249,21 @@
 				};
 				$('.sid-bts').click(function(){
 					var nIndex = getNI($(this));
-					movfunc($('#btc-lst .itm[index=' + nIndex + ']'));
-					clearInterval($('body').data('auto-scroll-gall'));
+					movfunc($(this).closest('.cst-space').find('.btc-lst .itm[index=' + nIndex + ']'));
+					clearInterval($(this).closest('.cst-space').data('auto-scroll-gall'));
 				});
 
-				var intid = setInterval(function(){
-					var nIndex = getNI($('.sid-bts.rt'));
-					movfunc($('#btc-lst .itm[index=' + nIndex + ']'));
-				}, 5000);
-				$('body').data('auto-scroll-gall', intid);
+				
 				
 				
 				var resizeGitm = function(){
 					$('.gall-itm').width($(window).width());
 					singleWidth = $('.gall-itm').width();
+					$.each(bigcontent, function(){
+						var nleft = $(this).find('.btc-lst .itm.selected').attr('index') * singleWidth * -1;
+						$(this).find('.gall-list').css('left', nleft);	
+					});
 					
-					var nleft = $('#btc-lst .itm.selected').attr('index') * singleWidth * -1;
-					$('#gall-list').css('left', nleft);
 				};
 				
 				resizeGitm();
