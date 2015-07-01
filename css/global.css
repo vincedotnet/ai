@@ -477,3 +477,12 @@ body {
 .gl4 .colfublk .blk .tt {
 	color:#ff8400;
 }
+.dqio {
+	padding:0 0 50px 0;
+	text-align:center;
+}
+.dqio .ttx {
+	width:400px;
+	display:inline-block;
+	font-size: 16px;
+}
