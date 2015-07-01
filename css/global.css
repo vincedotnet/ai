@@ -197,6 +197,19 @@ body {
 	background-position: center center;
 	overflow: hidden;
 }
+
+#service-block .gl1 {
+	background-image:none;
+	background-color:rgba(205, 0, 0, .85);
+}
+#service-block .gl2 {
+	background-image:none;
+	background-color:rgba(255, 255, 255, .85);
+}
+#service-block .gl3 {
+	background-image:none;
+	background-color:rgba(54, 108, 216, .85);
+}
 .btc-lst {
 	height: 8px;
 	text-align: center;
@@ -205,6 +218,10 @@ body {
 	width: 100%;
 	z-index: 4;
 }
+#service-block .btc-lst {
+	bottom:auto;
+	top:0;
+}
 .btc-lst .itm {
 	display: inline-block;
 	height: 3px;
@@ -212,6 +229,13 @@ body {
 	background: #FFF;
 	cursor: pointer;
 	margin: 0 5px;
+}
+#service-block .btc-lst .itm {
+	height:auto;
+	width:auto;
+	padding:8px 20px;
+	font-size:18px;
+	box-shadow:3px 0 0 rgba(0,0,0,.2);
 }
 .btc-lst .itm:hover {
 	background: #EEE;
