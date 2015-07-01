@@ -401,3 +401,79 @@ body {
 	color:rgba(255,255,255,.75);
 	font-size:16px;
 }
+.colfublk {
+	width:720px;height:240px;margin:20px auto;
+}
+.blk {
+	color:#999;
+	position:absolute;
+	background:#FFF;
+	left:0;
+	top:0;
+	/*opacity:.95;*/
+}
+.colfublk.dark .blk {
+	background:#333;
+	color:#FFF;
+}
+.blk:hover {
+	opacity:1;
+}
+.blk1 {
+	width:180px;
+	height:70px;
+}
+.blk2 {
+	width:360px;
+	height:140px;
+}
+.blk3 {
+	width:180px;
+	height:140px;
+}
+.blk4 {
+	width:180px;
+	height:280px;
+}
+.blk5 {
+	width:180px;
+	height:210px;
+}
+.blk .wp {
+	padding:15px;
+}
+.blk .tt {
+	color:#c00;
+	font-size:28px;
+	margin-bottom:0;
+	margin-top:0;
+	text-align:center;
+}
+.colfublk.dark .blk .tt {
+	color:#fff;
+}
+.blk .stt {
+	font-size:14px;
+	text-align:center;
+	line-height:22px;
+}
+.colfublk .blk .stt {
+	color:#aaa;
+}
+.gl2 .jitx1 {
+	color:#444;
+}
+.gl2 .jitx2 {
+	color:#666;
+	color:rgba(0,0,0,.5);
+}
+.gl3 .colfublk .blk .tt {
+	color:#3C92DB;
+}
+.gl3 .colfublk .blk .stt {
+	color:#666;
+	color:rgba(0,0,0,.5);
+}
+.gl4 .colfublk .blk .tt {
+	color:#ff8400;
+}
