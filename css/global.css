@@ -22,12 +22,9 @@ body {
 	background: #FFF;
 	font-size: 14px;
 	font-family: microsoft yahei;
-}
-* {
-	/*color: #3c92db;*/
-	
 	color: #444;
 }
+
 div {
 	position: relative;
 }
@@ -200,15 +197,19 @@ body {
 
 #service-block .gl1 {
 	background-image:none;
-	background-color:rgba(205, 0, 0, .85);
+	background-color:rgba(205, 0, 0, .9);
 }
 #service-block .gl2 {
 	background-image:none;
-	background-color:rgba(255, 255, 255, .85);
+	background-color:rgba(255, 255, 255, .9);
 }
 #service-block .gl3 {
 	background-image:none;
-	background-color:rgba(54, 108, 216, .85);
+	background-color:rgba(54, 108, 216, .9);
+}
+#service-block .gl4 {
+	background-image:none;
+	background-color:rgba(255, 132, 0, .9);
 }
 .btc-lst {
 	height: 8px;
@@ -235,7 +236,7 @@ body {
 	width:auto;
 	padding:8px 20px;
 	font-size:18px;
-	box-shadow:3px 0 0 rgba(0,0,0,.2);
+	box-shadow:3px 0 0 rgba(0,0,0,.1);
 }
 .btc-lst .itm:hover {
 	background: #EEE;
@@ -385,4 +386,18 @@ body {
 }
 .ganglne .short-h-l {
 	bottom:25px;
+}
+.jitx1 {
+	text-align:center;
+	padding-top:90px;
+	color:#FFF;
+	font-size:24px;
+	font-weight: bold;
+}
+.jitx2 {
+	text-align:center;
+	padding-top:5px;
+	color:#FFF;
+	color:rgba(255,255,255,.75);
+	font-size:16px;
 }
