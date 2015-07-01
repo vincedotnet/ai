@@ -185,20 +185,12 @@ body {
 	overflow: hidden;
 }
 #service-block .gl1 {
-	background-image: none;
-	background-color: rgba(205, 0, 0, .9);
 }
 #service-block .gl2 {
-	background-image: none;
-	background-color: rgba(255, 255, 255, .9);
 }
 #service-block .gl3 {
-	background-image: none;
-	background-color: rgba(54, 108, 216, .9);
 }
 #service-block .gl4 {
-	background-image: none;
-	background-color: rgba(255, 132, 0, .9);
 }
 .btc-lst {
 	height: 8px;
@@ -263,7 +255,7 @@ body {
 	font-size: 24px;
 	text-align: center;
 	margin-bottom: 10px;
-	margin-top: 215px;
+	margin-top: 260px;
 }
 .dmi-t2,
 .dmi-t4 {
@@ -273,7 +265,7 @@ body {
 	text-align: center;
 }
 .dmi-t3 {
-	margin-top: 160px;
+	margin-top: 220px;
 }
 .dmi-t6 {
 	width: 50px;
@@ -451,11 +443,11 @@ body {
 	color: #aaa;
 }
 .gl2 .jitx1 {
-	color: #444;
+	/*color: #444;*/
 }
 .gl2 .jitx2 {
-	color: #666;
-	color: rgba(0, 0, 0, .5);
+	/*color: #666;*/
+	/*color: rgba(0, 0, 0, .5);*/
 }
 .gl3 .colfublk .blk .tt {
 	color: #3C92DB;
