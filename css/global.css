@@ -9,7 +9,6 @@
 	font-weight: normal;
 	font-style: normal;
 }
-
 /*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
 
 ::-webkit-scrollbar {
@@ -255,12 +254,17 @@ a:hover {
 	color: #333;
 }
 .down-arrw {
-	background: url(../img/arr-down.png) center center no-repeat;
+	background: url(../img/arr-down.png) -2px center no-repeat;
 	width: 100px;
 	height: 100px;
 	display: inline-block;
-	margin:50px 0;
-	border:2px solid #FFF;
+	margin: 40px 0;
+	border: 2px solid #FFF;
+	cursor: pointer;
+}
+.down-arrw:hover {
+	background-position: -102px center;
+	background-color: #FFF;
 }
 .lp-tt {
 	font-size: 30px;
@@ -278,12 +282,13 @@ a:hover {
 }
 .lp-acc {
 	padding-right: 60px;
-	padding-left:60px;
+	padding-left: 60px;
 }
 .gpbt {
-	padding:15px;line-height:24px;
-	color:#444;
-	text-align:center;
+	padding: 15px;
+	line-height: 24px;
+	color: #444;
+	text-align: center;
 }
 .zo-jisu {
 	background-color: #444;
@@ -295,12 +300,16 @@ a:hover {
 	padding: 70px 0;
 }
 .zo-go.chapter {
-	background: #F0F0F0;
+	background: url(../img/gh_bg.jpg) center center no-repeat fixed;
 	color: #333;
 	padding: 50px 0;
 }
 .zo-go.chapter .lp-tt {
 	border-bottom-color: #333;
+}
+.zo-clients.chapter {
+	background: url(../img/bg03.jpg) left center repeat fixed;
+	padding: 50px 0;
 }
 .mmgrad {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffc832+0,f78b07+100 */
@@ -329,8 +338,6 @@ a:hover {
 	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffc832', endColorstr='#f78b07', GradientType=1);
 	/* IE6-9 */
 }
-
-
 .nabde {
 	padding: 0;
 }
@@ -343,17 +350,17 @@ a:hover {
 	margin-right: 0;
 }
 .nabde .tt {
-	background: #F0F0F0;
+	background: url(../img/light-gal.png) center center no-repeat #f6ecbb;
 	text-align: center;
 	padding: 30px;
 }
 .nabde .tt .t1 {
-	color:#444;
+	color: #444;
 	font-size: 32px;
 	font-family: AlternateGotNo2D, Impact;
 }
 .nabde .tt .t2 {
-	color:#444;
+	color: #444;
 	font-size: 20px;
 }
 .nabde .ctx {
@@ -361,12 +368,119 @@ a:hover {
 	padding: 20px 0;
 	line-height: 25px;
 }
-
-
-
-
+.zo-clients .nabde .itm .tt {
+	background: url(../img/fico-dichan.png) center 20px no-repeat;
+	padding-top: 160px;
+}
+.zo-clients .nabde .itm .tt.jr {
+	background-image: url(../img/fico-jinrong.png);
+}
+.zo-clients .nabde .itm .tt.kx {
+	background-image: url(../img/fico-kuaixiao.png);
+}
+.zo-clients .nabde .itm .tt.ly {
+	background-image: url(../img/fico-lvyou.png);
+}
+.zo-clients .nabde .itm .tt.sl {
+	background-image: url(../img/fico-zhineng.png);
+}
+.zo-clients .nabde .itm .tt .t1,
+.zo-clients .nabde .itm .tt .t2 {
+	color: #FFF;
+}
+.zo-contact {
+	padding-bottom:20px;
+}
+.zo-contact.chapter .ganglne {
+	background: url(../img/contact_bg.jpg);
+}
+.zo-contact .short-h-l {
+	background: #FFF;
+	background: rgba(0, 0, 0, .75);
+}
+.zo-contact.chapter {
+	background: url(../img/gh_bg.jpg) center center repeat fixed;
+	color: #444;
+}
+.zo-contact .tt1,
+.zo-contact .tt2 {
+	color: #444;
+	color: rgba(0, 0, 0, .75);
+}
+.short-h-l {
+	height: 3px;
+	width: 80px;
+	background: #fff76f;
+	position: absolute;
+	bottom: -25px;
+	left: 50%;
+	margin-left: -40px;
+}
+.lltt {
+	padding: 50px 0;
+}
+.lltt .ttx {
+	font-size: 24px;
+}
+.lltt .ltl,
+.lltt .ltr {
+	width: 280px;
+	top: 50%;
+	position: absolute;
+	left: 0;
+	height: 1px;
+	background: #ddd;
+}
+.lltt .ltr {
+	left: auto;
+	right: 0;
+}
+.dqio {
+	padding: 0 0 50px 0;
+	text-align: center;
+}
+.dqio .ttx {
+	width: 400px;
+	display: inline-block;
+	font-size: 18px;
+}
+.ganglne {
+	padding: 30px 0;
+	text-align: center;
+}
+.ganglne .tt1 {
+	font-size: 24px;
+}
+.ganglne .tt2 {
+	font-size: 32px;
+	font-family: AlternateGotNo2D, Impact;
+}
+.ganglne .short-h-l {
+	bottom: 25px;
+}
+.solu-bpp {
+	width: 600px;
+	padding: 40px 0;
+	margin: auto;
+	text-align: center;
+	box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+	margin-top: 80px;
+	background: rgba(255, 255, 255, .3);
+}
+.solu-bpp .bee {
+	font-size: 24px;
+	padding: 60px 0 20px 0;
+}
+.solu-bpp .short-h-l {
+	bottom: auto;
+	top: 32px;
+}
+.solu-bpp .ct {
+	line-height: 25px;
+}
 .cst-space {
 	/*background: #FFF;*/
+	
 	height: 500px;
 }
 .cst-space .gall-wp {
@@ -414,7 +528,7 @@ a:hover {
 	padding: 8px 20px;
 	font-size: 18px;
 	box-shadow: 3px 0 0 rgba(0, 0, 0, .1);
-	color:#444;
+	color: #444;
 }
 .btc-lst .itm:hover {
 	background: #EEE;
@@ -508,7 +622,6 @@ a:hover {
 	margin-top: 0;
 	text-align: center;
 }
-
 .blk .stt {
 	font-size: 14px;
 	text-align: center;
@@ -527,11 +640,71 @@ a:hover {
 .gl1 .colfublk .blk .stt {
 	color: #444;
 }
-
 .gl3 .colfublk .blk .stt {
 	color: #666;
 	color: rgba(0, 0, 0, .5);
 }
-.gl4 .colfublk .blk .tt, .gl2 .colfublk .blk .tt {
+.gl4 .colfublk .blk .tt,
+.gl2 .colfublk .blk .tt {
 	color: #fff76f;
+}
+.mzg01 {
+	padding-top: 60px;
+	width: 450px;
+	margin: auto;
+}
+.mzg02 {
+	font-size: 24px;
+	margin-bottom: 5px;
+}
+.mzg03 {
+	color: #aaa;
+}
+.mzg04 {
+	padding: 40px 20px;
+	border: 2px solid #ffd119;
+	margin: 20px auto 60px auto;
+	width: 320px;
+	position:relative;
+}
+.mzg04 .ctl {
+	width:120px;
+	height:120px;
+	background:url(../img/cct01.png) center center no-repeat;
+	position:absolute;
+	left:-120px;
+	top:-120px;
+}
+.mzg04 .ctl.t2 {
+	background-image:url(../img/cct04.png);
+	left:auto;
+	right:-120px;
+}
+.mzg04 .ctl.t3 {
+	background-image:url(../img/cct02.png);
+	top:auto;
+	bottom:-120px;
+}
+.mzg04 .ctl.t4 {
+	background-image:url(../img/cct03.png);
+	left:auto;
+	right:-120px;
+	top:auto;
+	bottom:-120px;
+}
+.mzg05 {
+	padding-top:80px;
+	background:url(../img/phoneicon.png) center top no-repeat;
+	text-align:center;
+	color:#444;
+	font-size:20px;
+}
+.mzg06 {
+	display:inline-block;
+	border-top:1px solid #ffd119;
+	padding:20px 0 0 0;
+	margin-top:20px;
+}
+.mzg07 {
+	margin-bottom:15px;
 }
