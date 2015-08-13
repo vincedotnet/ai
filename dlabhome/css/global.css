@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+
+::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+	background: transparent;
+}
+/*定义滚动条轨道 内阴影+圆角*/
+
+::-webkit-scrollbar-track {
+	border-radius: 5px;
+	background: transparent;
+}
+/*定义滑块 内阴影+圆角*/
+
+::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, .2);
+}
+::-webkit-scrollbar-thumb:hover {
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, .3);
+}
+body {
+	background: #333;
+	font-size: 14px;
+	font-family: microsoft yahei;
+	color: #fff;
+}
+div {
+	position: relative;
+}
+button {
+	font-family: "microsoft yahei";
+}
+a {
+	color: #FFF;
+	text-decoration: none;
+}
+a:hover {
+	/*color: #3c92db;*/
+	
+	color: #FFF;
+	text-decoration: none;
+}
+.container {
+
+}
+.h10px {
+	height: 10px;
+}
+.clear,
+.clear-5,
+.clear-10,
+.clear-15,
+.clear-20,
+.clear-30,
+.clear-50 {
+	clear: both;
+	display: block;
+	font-size: 0;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+.clear-5 {
+	height: 5px;
+}
+.clear-10 {
+	height: 10px;
+}
+.clear-15 {
+	height: 15px;
+}
+.clear-20 {
+	height: 20px;
+}
+.clear-30 {
+	height: 30px;
+}
+.clear-50 {
+	height: 50px;
+}
+.pad-b-30 {
+	padding-bottom: 30px;
+}
+.pad-t-30 {
+	padding-top: 30px;
+}
+.pad-b-20 {
+	padding-bottom: 20px;
+}
+.pad-t-20 {
+	padding-top: 20px;
+}
+.pad-30 {
+	padding: 30px;
+}
+.pad-15 {
+	padding: 15px;
+}
+.pad-10 {
+	padding: 10px;
+}
+.tc {
+	text-align: center !important;
+}
+.trt {
+	text-align: right !important;
+}
+.lf {
+	float: left;
+}
+.rf {
+	float: right;
+}
+.font12px {
+	font-size: 12px;
+}
