@@ -75,7 +75,7 @@ $.extend({
 			textAlign: 'center',
 			exitbtn: true,
 			exitCallback: false,
-			exitText: '知道了'
+			exitText: '好吧'
 		};
 		$.extend(_settings, options);
 		_settings.modal = true;

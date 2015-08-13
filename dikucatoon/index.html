@@ -60,12 +60,12 @@
 				box-shadow: 0 0 10px rgba(0, 0, 0, .15);
 			}
 			button {
-				background: #333;
+				background: #48cd90;
 				color: #fff;
 				border-radius: 0;
 				border: none;
-				padding: 0 25px;
-				font-size: 18px;
+				padding: 0 5px;
+				font-size: 16px;
 				margin: 0;
 				box-sizing: border-box;
 				width: 50%;
@@ -77,7 +77,7 @@
 				background: #555;
 			}
 			.dialogbt {
-				background: #48cd90;
+				background: #333;
 				color: #fff;
 			}
 			.dialogbt:active {
@@ -85,7 +85,7 @@
 			}
 		</style>
 		<div class="chapterwp">
-			<div id="chapter1" class="chapter selected" style="background-image:url(img/s1.jpg)" l="先去吃个宵夜吧" r="还是洗洗睡吧" p="睡你MB，去吃宵夜">
+			<div id="chapter1" class="chapter" style="background-image:url(img/s1.jpg)" l="先去吃个宵夜吧" r="还是洗洗睡吧" p="睡你MB，去吃宵夜">
 
 			</div>
 			<div id="chapter2" class="chapter" style="background-image:url(img/s2.jpg)" l="好像是好东西哦" r="任性的我肯定不捡" p="导演说了，不捡也要捡">
@@ -106,10 +106,10 @@
 			<div id="chapter7" class="chapter" style="background-image:url(img/s7.jpg)" l="赶紧进入下一页，福利要来了">
 
 			</div>
-			<div id="chapter8" class="chapter" style="background-image:url(img/s8.jpg)">
+			<div id="chapter8" class="chapter" style="background-image:url(img/s8.jpg)" l="什么鬼我才不扫码呢">
 
 			</div>
-			<div id="chapter9" class="chapter" style="background-image:url(img/s9.jpg)">
+			<div id="chapter9" class="chapter" style="background-image:url(img/s9.jpg)" l="....">
 
 			</div>
 
@@ -128,7 +128,22 @@
 		<script type="text/javascript" src="js/global.js"></script>
 		<script type="text/javascript">
 			var current_no = 1;
-			var gotochapter = function() {}
+			var gotochapter = function(oldchapter, newchapter, newno) {
+				if (oldchapter && oldchapter.length) {
+					oldchapter.removeClass('selected').addClass('unselected');
+				}
+				newchapter.removeClass('unselected').addClass('selected');
+				$('#llbei .bf').html(newno);
+				// 
+				var tl = newchapter.attr('l');
+				var tr = newchapter.attr('r');
+				$('.btbar .btn.r').hide();
+				$('.btn.l').css('width', '100%').text(tl);
+				if (tr) {
+					$('.btn.l').css('width', '50%');
+					$('.btn.r').show().css('width', '50%').text(tr).attr('txt', newchapter.attr('p'));
+				}
+			};
 			$('document').ready(function() {
 				var totalpages = $('.chapter').length;
 				$('#llbei .af').html(totalpages);
@@ -141,11 +156,6 @@
 						replay = true;
 					}
 					var next_one = $('#chapter' + current_no);
-					var gotochapter = function(oldchapter, newchapter, newno) {
-						oldchapter.removeClass('selected').addClass('unselected');
-						newchapter.removeClass('unselected').addClass('selected');
-						$('#llbei .bf').html(newno);
-					};
 					if (!replay) {
 						gotochapter($('#' + oldid), next_one, current_no);
 					} else {
@@ -165,6 +175,7 @@
 						msg: $(this).attr('txt')
 					});
 				});
+				gotochapter(null, $('#chapter1'), 1);
 			});
 		</script>
 	</body>
