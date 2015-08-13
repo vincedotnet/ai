@@ -29,7 +29,6 @@
 				-moz-transition: top 0.4s;
 				-webkit-transition: top 0.4s;
 				-o-transition: top 0.4s;
-				
 				top: 0px;
 				z-index: 5;
 			}
@@ -38,12 +37,11 @@
 				-moz-transition: top 0.4s;
 				-webkit-transition: top 0.4s;
 				-o-transition: top 0.4s;
-				
 				top: 100%;
 				z-index: 2;
 			}
 			.chapterwp {
-				background:url(img/imgs-bg.jpg) center center no-repeat;
+				background: url(img/imgs-bg.jpg) center center no-repeat;
 				background-size: cover;
 				position: fixed;
 				left: 0;
@@ -59,124 +57,112 @@
 				height: 50px;
 				background: #aaa;
 				z-index: 2;
-				box-shadow: 0 0 10px rgba(0,0,0,.15);
+				box-shadow: 0 0 10px rgba(0, 0, 0, .15);
 			}
 			button {
-				background:#333;
-				color:#fff;
-				border-radius:0;
-				border:none;
-				padding:0 25px;
-				font-size:18px;
-				margin:0;
+				background: #333;
+				color: #fff;
+				border-radius: 0;
+				border: none;
+				padding: 0 25px;
+				font-size: 18px;
+				margin: 0;
 				box-sizing: border-box;
-				width:50%;
-				height:100%;
-				text-shadow: 0 1px 1px rgba(0,0,0,.25);
+				width: 50%;
+				height: 100%;
+				text-shadow: 0 1px 1px rgba(0, 0, 0, .25);
 				font-weight: bold;
 			}
 			button:active {
-				background:#555;
+				background: #555;
 			}
-			
 			.dialogbt {
-				background:#48cd90;
-				color:#fff;
+				background: #48cd90;
+				color: #fff;
 			}
 			.dialogbt:active {
-				background:#67e0a8
+				background: #67e0a8
 			}
 		</style>
 		<div class="chapterwp">
-			<div id="chapter1" class="chapter selected" style="background-image:url(img/1.jpg)">
+			<div id="chapter1" class="chapter selected" style="background-image:url(img/s1.jpg)" l="先去吃个宵夜吧" r="还是洗洗睡吧" p="睡你MB，去吃宵夜">
 
 			</div>
-			<div id="chapter2" class="chapter" style="background-image:url(img/2.jpg)">
+			<div id="chapter2" class="chapter" style="background-image:url(img/s2.jpg)" l="好像是好东西哦" r="任性的我肯定不捡" p="导演说了，不捡也要捡">
 
 			</div>
-			<div id="chapter3" class="chapter" style="background-image:url(img/3.jpg)">
+			<div id="chapter3" class="chapter" style="background-image:url(img/s3.jpg)" l="心动不如行动" r="好羞羞回家好了" p="羞你MB，就知道在家费纸，去！">
 
 			</div>
-			<div id="chapter4" class="chapter" style="background-image:url(img/4.jpg)">
+			<div id="chapter4" class="chapter" style="background-image:url(img/s4.jpg)" l="耍个宝剑去" r="在地下？有点怕" p="怕毛毛，这点勇气都没有创毛业啊">
 
 			</div>
-			<div id="chapter5" class="chapter" style="background-image:url(img/5.jpg)">
+			<div id="chapter5" class="chapter" style="background-image:url(img/s5.jpg)" l="没选择不习惯？那就给你按一下吧">
 
 			</div>
-			<div id="chapter6" class="chapter" style="background-image:url(img/6.jpg)">
+			<div id="chapter6" class="chapter" style="background-image:url(img/s6.jpg)" l="小编实在想不到了，你就随便按一下吧">
 
 			</div>
-			<div id="chapter7" class="chapter" style="background-image:url(img/7.jpg)">
+			<div id="chapter7" class="chapter" style="background-image:url(img/s7.jpg)" l="赶紧进入下一页，福利要来了">
 
 			</div>
-			<div id="chapter8" class="chapter" style="background-image:url(img/8.jpg)">
+			<div id="chapter8" class="chapter" style="background-image:url(img/s8.jpg)">
 
 			</div>
-			<div id="chapter9" class="chapter" style="background-image:url(img/9.jpg)">
+			<div id="chapter9" class="chapter" style="background-image:url(img/s9.jpg)">
 
 			</div>
-			<div id="chapter10" class="chapter" style="background-image:url(img/10.jpg)">
 
-			</div>
-			<div id="chapter11" class="chapter" style="background-image:url(img/11.jpg)">
-
-			</div>
-			<div id="chapter12" class="chapter" style="background-image:url(img/12.jpg)">
-
-			</div>
-			<div id="chapter13" class="chapter" style="background-image:url(img/13.jpg)">
-
-			</div>
-			<div id="chapter14" class="chapter" style="background-image:url(img/14.jpg)">
-
-			</div>
-			
-			
 			<!--HERE IS NEW-->
 			<div id="llbei">
-				<span class="bf">1</span>
-				/
+				<span class="bf">1</span> /
 				<span class="af">5</span>
 			</div>
 		</div>
 		<div class="btbar">
-			<button type="button" class="btn lf" id="next-pg-btn">下一页</button>
-			<button type="button" class="btn lf dialogbt">对话框</button>
+			<button type="button" class="btn lf l" id="next-pg-btn">下一页</button>
+			<button type="button" class="btn lf r dialogbt" txt="">对话框</button>
 		</div>
-		<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
-		<script type="text/javascript" src="js/jquery-mobile.js" ></script>
-		<script type="text/javascript" src="js/global.js" ></script>
+		<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+		<script type="text/javascript" src="js/jquery-mobile.js"></script>
+		<script type="text/javascript" src="js/global.js"></script>
 		<script type="text/javascript">
 			var current_no = 1;
+			var gotochapter = function() {}
 			$('document').ready(function() {
-				$('#llbei .af').html($('.chapter').length);
-				$('#next-pg-btn').tap(function(){
+				var totalpages = $('.chapter').length;
+				$('#llbei .af').html(totalpages);
+				$('#next-pg-btn').tap(function() {
 					var oldid = "chapter" + current_no;
 					current_no++;
-					var newid = "chapter" + current_no;
-					var next_one = $('#' + newid);
-					if(next_one.length) {
-						$('#' + oldid).removeClass('selected').addClass('unselected');
-						next_one.removeClass('unselected').addClass('selected');
-						$('#llbei .bf').html(current_no);
+					var replay = false;
+					if (current_no > totalpages) {
+						current_no = 1;
+						replay = true;
+					}
+					var next_one = $('#chapter' + current_no);
+					var gotochapter = function(oldchapter, newchapter, newno) {
+						oldchapter.removeClass('selected').addClass('unselected');
+						newchapter.removeClass('unselected').addClass('selected');
+						$('#llbei .bf').html(newno);
+					};
+					if (!replay) {
+						gotochapter($('#' + oldid), next_one, current_no);
 					} else {
 						$.alertbox({
-							msg:'未完待续',
+							msg: '未完待续',
 							exitText: '再看一遍',
-							exitCallback: function(){
-								$('#chapter' + (current_no - 1)).removeClass('selected').addClass('unselected');
-								current_no = 1;
-								$('#chapter' + current_no).removeClass('unselected').addClass('selected');
-								$('#llbei .bf').html(current_no);
+							closebtn: false,
+							exitCallback: function() {
+								gotochapter($('#' + oldid), next_one, current_no);
 							}
 						});
 					}
-					
 				});
-				
-				$('.dialogbt').tap(function(){
+				$('.dialogbt').tap(function() {
 					$.alertbox({
-						msg: '这里用于显示相关的信息'
+						closebtn: false,
+						msg: $(this).attr('txt')
 					});
 				});
 			});
