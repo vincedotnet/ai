@@ -329,7 +329,7 @@ p:after {
 	padding:5px 15px;
 	color:#FFF;
 	right:20px;
-	bottom:20px;
+	top:20px;
 	display:inline-block;
 	position:absolute;
 	font-family: helvetica, arial;
