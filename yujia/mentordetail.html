@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>张三丰</title>
+
+		<!-- Bootstrap -->
+		<link href="css/global.css" rel="stylesheet">
+	</head>
+
+	<script type="text/javascript">
+		// 此处是php代码渲染输出而成，一次性把该导师所有的图片路径都加载至此。
+		var imgs_json = [{
+			url: 'img/user01-big.jpg'
+		}, {
+			url: 'img/user02-big.jpg'
+		}, {
+			url: 'img/user03-big.jpg'
+		}];
+	</script>
+
+	<body ontouchstart="">
+		<!-- $.waiting()（START） -->
+		<div class="rotatedivwrapper">
+			<div class="rotatediv"></div>
+			<div class="msg"></div>
+		</div>
+		<!-- $.waiting()（END） -->
+
+		<!--此段为滑动多图的html部分，写死在这里-->
+		<div id="cd_mentor_img_slider" class="swipe">
+			<div class="swipe-wrap">
+				<!--<div class="figure"></div>-->
+			</div>
+			<!-- 放置索引标签的地方 -->
+			<div class="gl">
+				<!--<div class="pgitm"></div>-->
+			</div>
+		</div>
+		<div class="mentor-intro-blk">
+			<img src="img/female.png" class="usrgener">
+			<img src="img/male.png" class="usrgener selected">
+			<img src="img/user04.jpg" class="usrimg" />
+
+			<div class="user-tt">
+				<!--有认证就有 has_cert这个class-->
+				<!--未认证就没有 has_cert这个class， 并且没有下方class="cert"的span-->
+				<div class="nm has_cert">
+					张三丰
+					<span class="cert">已认证</span>
+				</div>
+			</div>
+			<div class="user3-desc">
+				<div>授课类型： <span class="dt">阴阳瑜伽 / 阴瑜伽 / 流瑜伽</span></div>
+				<div>授课区域： <span class="dt">福田区 / 南山区 / 宝安区</span></div>
+			</div>
+
+			<!--<div class="com-star-l" style="">
+				<div>评分 <span class="bold">4.6</span> - 15次</div>
+			</div>-->
+			<div class="t3col-group">
+				<div class="t1col">
+					<div class="wp">
+						<div class="t1">价格</div>
+						<div class="t2">￥422<span>小时</span></div>
+					</div>
+				</div>
+				<div class="t1col">
+					<div class="wp">
+						<div class="t1">教学年限</div>
+						<div class="t2">25<span>年</span></div>
+					</div>
+				</div>
+				<div class="t1col">
+					<div class="wp">
+						<div class="t1">评分</div>
+						<div class="t2">4.6<span>分</span></div>
+					</div>
+				</div>
+				<div class="t1col">
+					<div class="wp">
+						<div class="t1">授课次数</div>
+						<div class="t2">134<span>次</span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="dipu1">
+			<div class="dipu2">
+				<div class="dipu3">个人简介</div>
+				<div class="dipu4">国际私人教练毕业院校:广州体育学院 运动经历:曾任广州健力宝有氧教练,力美健广州天河会所任有氧教练。</div>
+			</div>
+			<div class="dipu2">
+				<div class="dipu3">执教经历</div>
+				<div class="dipu4">2012年开始学习瑜伽，至现在已经3年有余，人的身心得到了极大的提升。</div>
+			</div>
+			<div class="dipu2">
+				<div class="dipu3">执教经历</div>
+				<div class="dipu4">2012年开始学习瑜伽，至现在已经3年有余，人的身心得到了极大的提升。</div>
+			</div>
+			<div class="dipu2">
+				<div class="dipu3">选择授课时间</div>
+				<div class="dipu4">
+					<div class="time-tb">
+						<div class="tr">
+							<div class="td" val="6">6:00</div>
+							<div class="td unclickable" val="7">7:00</div>
+							<div class="td unclickable" val="8">8:00</div>
+							<div class="td" val="9">9:00</div>
+						</div>
+						<div class="tr">
+							<div class="td" val="10">10:00</div>
+							<div class="td" val="11">11:00</div>
+							<div class="td selected" val="12">12:00</div>
+							<div class="td selected" val="13">13:00</div>
+						</div>
+						<div class="tr">
+							<div class="td" val="14">14:00</div>
+							<div class="td" val="15">15:00</div>
+							<div class="td" val="16">16:00</div>
+							<div class="td" val="17">17:00</div>
+						</div>
+						<div class="tr">
+							<div class="td" val="18">18:00</div>
+							<div class="td" val="19">19:00</div>
+							<div class="td" val="20">20:00</div>
+							<div class="td" val="21">21:00</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="dipu2 nbb">
+				<div class="dipu3 mmbe">最新评论</div>
+				<div class="dipu4">
+					<div class="mgi-b1">
+						<img src="img/user03.jpg" class="b4ee" />
+						<div class="b5ee">小甜甜布兰妮</div>
+						<div class="b6ee">2015年5月5日</div>
+						<div class="b7ee">
+							经典诵读实打实的服务诶我发额，文件哦if为温热感觉哦。
+						</div>
+					</div>
+					<div class="mgi-b2">
+						查看更多
+						<span class="arr-r"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="btfixbar">
+			<div class="rtselectedtime selected">
+				<span class="t1">2月5日 12:00-15:00</span>
+				<span class="t2">授课时间</span>
+			</div>
+			<button type="button" class="btbookbtn selected">预约老师</button>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+		<script type="text/javascript" src="js/jquery-mobile.js"></script>
+		<script type="text/javascript" src="js/global.js"></script>
+		<script type="text/javascript" src="js/swipe.js"></script>
+		<script>
+			$('document').ready(function() {
+				if (imgs_json.length) {
+					// 根据imgs_json的长度和内容循环加载图片
+					$.each(imgs_json, function() {
+						var new_img = $('<div>').addClass('figure');
+						new_img.css('background-image', 'url(' + this.url + ')');
+						$('#cd_mentor_img_slider .swipe-wrap').append(new_img);
+					});
+					// 初始化swipe
+					var slider = Swipe(document.getElementById('cd_mentor_img_slider'), {
+						startSlide: 0,
+						speed: 400,
+						auto: false,
+						continuous: false,
+						disableScroll: false,
+						stopPropagation: false,
+						callback: function(index, elem) {},
+						transitionEnd: function(index, elem) {
+							$('.gl .pgitm.selected').removeClass('selected');
+							$('.gl .pgitm[index="' + index + '"]').addClass('selected');
+						}
+					});
+					// 初始化pager
+					var n = slider.getNumSlides();
+					for (var i = 0; i < n; i++) {
+						var new_pager = $('<div>').addClass('pgitm').attr('index', i);
+						if(i === 0) {
+							new_pager.addClass('selected');
+						}
+						$('.swipe .gl').append(new_pager);
+					}
+				}
+			});
+		</script>
+	</body>
+
+</html>
